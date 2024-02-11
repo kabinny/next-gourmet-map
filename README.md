@@ -38,3 +38,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+---
+
+## Pages Routes 파일
+
+| 파일명        | 설명                                                                   |
+| ------------- | ---------------------------------------------------------------------- |
+| \_app.js      | Next.js 커스텀 레이아웃 및 전역 설정                                   |
+| \_document.js | Next.js의 커스텀 문서 파일. HTML 구조 정의, 스타일, 메타태그, SSR 설정 |
+| \_error.js    | Next.js 커스텀 에러 처리                                               |
+| 404.js        | 404에러가 났을 때 뜨는 페이지                                          |
+| 500.js        | 500에러가 났을 때 뜨는 페이지                                          |
