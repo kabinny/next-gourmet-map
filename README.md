@@ -50,3 +50,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 | \_error.js    | Next.js 커스텀 에러 처리                                               |
 | 404.js        | 404에러가 났을 때 뜨는 페이지                                          |
 | 500.js        | 500에러가 났을 때 뜨는 페이지                                          |
+
+## 맛집 데이터
+
+[서울시 지정·인증업소 현황](https://data.seoul.go.kr/dataList/OA-2741/S/1/datasetView.do)
