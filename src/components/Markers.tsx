@@ -2,20 +2,20 @@ import { Dispatch, SetStateAction, useCallback, useEffect } from 'react'
 
 interface MarkerProps {
   map: any
-  storeDataList: any[]
+  stores: any[]
   setCurrentStore: Dispatch<SetStateAction<any>>
 }
 
 // 마커 생성하는 부분만 분리한 컴포넌트
 export default function Marksers({
   map,
-  storeDataList,
+  stores,
   setCurrentStore,
 }: MarkerProps) {
   const loadKakaoMarkers = useCallback(() => {
     if (map) {
       // 식당 데이터 마커
-      storeDataList?.forEach((store) => {
+      stores?.forEach((store) => {
         var imageSrc = store?.bizcnd_code_nm
             ? `/images/markers/${store?.bizcnd_code_nm}.png`
             : '/images/markers/default.png', // 마커이미지의 주소입니다
@@ -70,7 +70,7 @@ export default function Marksers({
         })
       })
     }
-  }, [map, setCurrentStore, storeDataList])
+  }, [map, setCurrentStore, stores])
 
   useEffect(() => {
     loadKakaoMarkers()
